@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener {
 	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
 		if($cmd->getName() === "triggered"){
 			foreach($this->getServer()->getOnlinePlayers() as $p){
-			$p->sendMessage(TF::BOLD . TF::GOLD . $sender->getName() . TF::RED . " is triggered!");
+			$p->sendBroadcast(TF::BOLD . TF::GOLD . $sender->getName() . TF::RED . " is triggered!");
 			}
 		}
 	}
